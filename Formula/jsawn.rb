@@ -11,7 +11,7 @@ class Jsawn < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/aryankumar07/jsawn/releases/download/v0.1.0/jsawn_Darwin_x86_64.tar.gz"
-      sha256 "f7b21821762d41929c33a9a16606ccff9500aabbafc4dfef9748fd0dfc12c386"
+      sha256 "aac751d73fa84ed35c3d1e53fbfc66f4fcb416f56d37d71d652ad5db59a3a20a"
 
       def install
         bin.install "jsawn"
@@ -19,7 +19,7 @@ class Jsawn < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/aryankumar07/jsawn/releases/download/v0.1.0/jsawn_Darwin_arm64.tar.gz"
-      sha256 "57cdf0f0c7799c6d83203734564505259c6f1e4011da2a588d5c98e821155272"
+      sha256 "694c5012d620cc1411792d564292390cdf6722a4b9bb7cd29ce773ebc0904da7"
 
       def install
         bin.install "jsawn"
@@ -30,21 +30,21 @@ class Jsawn < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/aryankumar07/jsawn/releases/download/v0.1.0/jsawn_Linux_x86_64.tar.gz"
-      sha256 "8b9f15583f66b6b259a39a2403a1a866163835daf505f1916bbc51b8fb3759e6"
+      sha256 "36f9646d53f2138519874ae58a105d6abe00c3e40a093cebac0d9735842d97c9"
       def install
         bin.install "jsawn"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/aryankumar07/jsawn/releases/download/v0.1.0/jsawn_Linux_armv6.tar.gz"
-      sha256 "4f5f360f50e4bcdb8213098535f66b4cf7036bed0ff593f0db98d83a4eee62a1"
+      sha256 "f935b001c7e804c628e1e78b4a656df8082353d9c41ca836d4170a698a87a210"
       def install
         bin.install "jsawn"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/aryankumar07/jsawn/releases/download/v0.1.0/jsawn_Linux_arm64.tar.gz"
-      sha256 "18b599889b3bc4cee4748dc9c107c9ee55247b6033129124de1acabdf763df0d"
+      sha256 "e6fc91a8b77668ef1685c71938db66a0b84b5f8dc92911d660f966d8eae42b14"
       def install
         bin.install "jsawn"
       end
