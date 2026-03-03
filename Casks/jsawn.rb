@@ -3,7 +3,7 @@ cask "jsawn" do
   name "jsawn"
   desc "Interactive JSON viewer for the terminal"
   homepage "https://github.com/aryankumar07/jsawn"
-  version "0.2.0"
+  version "0.2.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "jsawn" do
     on_intel do
       url "https://github.com/aryankumar07/jsawn/releases/download/v#{version}/jsawn_Darwin_x86_64.tar.gz",
         verified: "github.com/aryankumar07/jsawn"
-      sha256 "3924ee3923cd540fd0c29e219c354e8f1fce805bb80808495b4a1234eda838db"
+      sha256 "efc7beb68c5a9db231e29a5fbbb7e6655248fb8903bdf561f18d1fe969a998ab"
     end
     on_arm do
       url "https://github.com/aryankumar07/jsawn/releases/download/v#{version}/jsawn_Darwin_arm64.tar.gz",
         verified: "github.com/aryankumar07/jsawn"
-      sha256 "c7bf177918b8e3714748d122cfb4183e1a8c21f96b91aa2c38df703f4db3e23a"
+      sha256 "e3bc244d13cf86d1d869176de575c7a9952714a2249af3c42762744862546e6b"
     end
   end
 
@@ -28,12 +28,12 @@ cask "jsawn" do
     on_intel do
       url "https://github.com/aryankumar07/jsawn/releases/download/v#{version}/jsawn_Linux_x86_64.tar.gz",
         verified: "github.com/aryankumar07/jsawn"
-      sha256 "26c6ae7d09b9acb4d8bbf42b09e088768b76bf05f4cc88c362797c56de8e08e4"
+      sha256 "76a45f1b83e89821c5c0c695ccde4df1675cbfb4dd05012cba0903c59138a4f3"
     end
     on_arm do
       url "https://github.com/aryankumar07/jsawn/releases/download/v#{version}/jsawn_Linux_arm64.tar.gz",
         verified: "github.com/aryankumar07/jsawn"
-      sha256 "dea8c11a49d394edc63ce10af453a4a6f97e61050272a828c3bbd8e085e09094"
+      sha256 "1452bdf1cf3cc3a183cc2e0dd204760e098e4be3f6a5110c6a5a43a25869d570"
     end
   end
 
